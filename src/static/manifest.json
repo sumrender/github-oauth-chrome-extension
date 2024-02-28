@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub OAuth Extension",
+  "description": "Xyne assignment",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.jpg",
+      "48": "icon.jpg",
+      "128": "icon.jpg"
+    }
+  },
+  "permissions": ["storage", "identity", "notifications", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "oauth2": {
+    "client_id": "753bb6e221d65be5b88a",
+    "scopes": ["user"],
+    "redirect_uris": ["http://localhost:3000/github/callback"]
+  }
+}
